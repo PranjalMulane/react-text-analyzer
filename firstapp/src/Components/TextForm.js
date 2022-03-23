@@ -49,7 +49,7 @@ export default function TextForm() {
             {/* text summery */}
             <div className="container">
                 <h4>Text Summery</h4>
-                <p>Total Words : {text.split(" ").length-1}</p>
+                <p>Total Words : {text.split(" ").length - 1}</p>
                 <p>Total Characters : {text.length} </p>
             </div>
         </>

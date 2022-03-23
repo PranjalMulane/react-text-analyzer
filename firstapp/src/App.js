@@ -7,7 +7,7 @@ function App() {
   return (
     <>
     <Navbar titleText="React Text Analyzer" aboutText="About us" contactText="Contact" />
-     <TextForm/>
+    <TextForm/>
     </>
   );
 }
