@@ -1,9 +1,12 @@
 import React, { useState } from 'react'
 
+
 export default function TextForm() {
 
     //use casedeclaration
     const [text, setText] = useState('');
+
+
 
     //function for uppercase button
     const uppercaseClick = () => {
@@ -34,7 +37,8 @@ export default function TextForm() {
 
     return (
         <>
-            <div className="container my-5">
+      
+            <div className="container my-5 ">
                 <div className="form-group">
                     <h2>Text Analyzer</h2>
                     {/* text area JSX */}
@@ -47,11 +51,12 @@ export default function TextForm() {
             </div>
 
             {/* text summery */}
-            <div className="container">
+            <div className="container" >
                 <h4>Text Summery</h4>
                 <p>Total Words : {text.split(" ").length - 1}</p>
                 <p>Total Characters : {text.length} </p>
             </div>
+
         </>
 
 
