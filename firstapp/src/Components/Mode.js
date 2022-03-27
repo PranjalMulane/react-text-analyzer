@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 
-export default function Mode() {
+
+export default function Mode(props) {
 
     // useStateSnippet
     const [myStyle, setMyStyle] = useState({
@@ -11,14 +12,14 @@ export default function Mode() {
     const toggleStyle=()=>{
         if(myStyle.color === 'white'){
             setMyStyle({
-                color: 'dark ',
+                color: 'black ',
                 background: 'white'
             })
         }
         else{
             setMyStyle({
                 color:'white',
-                background: 'dark '
+                background: 'black '
             })
         }
 
@@ -28,9 +29,11 @@ export default function Mode() {
 
   return (
     <>
+  
     <div >
-    <div className="container" style={myStyle}>
-        <button className="btn btn-dark" style={myStyle} onClick={toggleStyle}>Change mode</button>
+        <hr/>
+    <div className="container" style={{color: props.mode ==='dark' ? 'white' : 'black' }} >
+        <h3>About This Site</h3>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio suscipit voluptates iusto. Nesciunt aliquid perspiciatis similique distinctio odit, ullam accusantium animi, iusto quos, id eum perferendis molestiae tempore laboriosam exercitationem.</p>
     </div>
     </div>
